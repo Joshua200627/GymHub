@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Membership - GymHub</title>
+    <link rel="stylesheet" href="membership.css">
+    <link rel="stylesheet" href="footer.css">
+    <link rel="stylesheet" href="nav.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="icon" type="image/jpg" href="logo/logo.jpg">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <a href="index.html">
+                    <img src="logo/logo.jpg" alt="GymHub Logo">
+                </a>
+            </div>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="trainers.html">Trainers</a></li>
+                <li><a href="membership.html" class="active">Membership</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+            <div class="nav-buttons">
+                <div class="cta-button">
+                    <a href="contact.html" class="btn">Join Now</a>
+                </div>
+                <button class="menu-toggle" id="menu-toggle">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </nav>
+    </header>
+
+    <div class="menu-overlay" id="menu-overlay"></div>
+
+    <section class="page-header">
+        <div class="page-header-bg">
+            <img src="membership/hero.jpg" alt="Gym Membership">
+        </div>
+        <div class="container">
+            <h1>Membership Plans</h1>
+            <p>Choose the right plan for your fitness journey.</p>
+        </div>
+    </section>
+
+    <section class="membership">
+        <div class="container">
+            <div class="section-header">
+                <h2>Choose Your Plan</h2>
+                <p>Flexible options to fit your lifestyle</p>
+            </div>
+            <div class="pricing-grid">
+                <div class="pricing-card">
+                    <div class="pricing-header">
+                        <h3>Basic</h3>
+                        <p class="price">₱1661<span>/month</span></p>
+                    </div>
+                    <ul class="pricing-features">
+                        <li><i class="fas fa-check"></i> Access to gym facilities</li>
+                        <li><i class="fas fa-check"></i> Basic equipment usage</li>
+                        <li><i class="fas fa-check"></i> Locker room access</li>
+                        <li><i class="fas fa-times"></i> Group classes</li>
+                        <li><i class="fas fa-times"></i> Personal training</li>
+                        <li><i class="fas fa-times"></i> Nutrition consultation</li>
+                    </ul>
+                    <a href="contact.html" class="btn btn-primary">Choose Plan</a>
+                </div>
+                <div class="pricing-card featured">
+                    <div class="pricing-header">
+                        <h3>Premium</h3>
+                        <p class="price">₱3380<span>/month</span></p>
+                    </div>
+                    <ul class="pricing-features">
+                        <li><i class="fas fa-check"></i> Access to gym facilities</li>
+                        <li><i class="fas fa-check"></i> Full equipment usage</li>
+                        <li><i class="fas fa-check"></i> Locker room access</li>
+                        <li><i class="fas fa-check"></i> Unlimited group classes</li>
+                        <li><i class="fas fa-check"></i> 2 personal training sessions</li>
+                        <li><i class="fas fa-times"></i> Nutrition consultation</li>
+                    </ul>
+                    <a href="contact.html" class="btn btn-primary">Choose Plan</a>
+                </div>
+                <div class="pricing-card">
+                    <div class="pricing-header">
+                        <h3>Elite</h3>
+                        <p class="price">₱5672<span>/month</span></p>
+                    </div>
+                    <ul class="pricing-features">
+                        <li><i class="fas fa-check"></i> Access to gym facilities</li>
+                        <li><i class="fas fa-check"></i> Full equipment usage</li>
+                        <li><i class="fas fa-check"></i> Locker room access</li>
+                        <li><i class="fas fa-check"></i> Unlimited group classes</li>
+                        <li><i class="fas fa-check"></i> 4 personal training sessions</li>
+                        <li><i class="fas fa-check"></i> Monthly nutrition consultation</li>
+                    </ul>
+                    <a href="contact.html" class="btn btn-primary">Choose Plan</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="membership-benefits">
+        <div class="container">
+            <div class="section-header">
+                <h2>Membership Benefits</h2>
+                <p>Why join GymHub?</p>
+            </div>
+            <div class="benefits-grid">
+                <div class="benefit-card">
+                    <div class="benefit-icon">
+                        <i class="fas fa-clock"></i>
+                    </div>
+                    <h3>24/7 Access</h3>
+                    <p>Work out on your schedule with round-the-clock access to our facilities.</p>
+                </div>
+                <div class="benefit-card">
+                    <div class="benefit-icon">
+                        <i class="fas fa-dumbbell"></i>
+                    </div>
+                    <h3>State-of-the-Art Equipment</h3>
+                    <p>Train with the latest fitness equipment designed for optimal results.</p>
+                </div>
+                <div class="benefit-card">
+                    <div class="benefit-icon">
+                        <i class="fas fa-users"></i>
+                    </div>
+                    <h3>Group Classes</h3>
+                    <p>Join our energetic group classes led by expert instructors.</p>
+                </div>
+                <div class="benefit-card">
+                    <div class="benefit-icon">
+                        <i class="fas fa-shower"></i>
+                    </div>
+                    <h3>Premium Amenities</h3>
+                    <p>Enjoy clean locker rooms, showers, and other premium amenities.</p>
+                </div>
+                <div class="benefit-card">
+                    <div class="benefit-icon">
+                        <i class="fas fa-user-friends"></i>
+                    </div>
+                    <h3>Personal Training</h3>
+                    <p>Get personalized guidance from our certified personal trainers.</p>
+                </div>
+                <div class="benefit-card">
+                    <div class="benefit-icon">
+                        <i class="fas fa-percent"></i>
+                    </div>
+                    <h3>Member Discounts</h3>
+                    <p>Enjoy special discounts on supplements, apparel, and more.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="faq">
+        <div class="container">
+            <div class="section-header">
+                <h2>Frequently Asked Questions</h2>
+                <p>Answers to common questions about our memberships</p>
+            </div>
+            <div class="faq-list">
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>Is there a joining fee?</h3>
+                        <i class="fas fa-plus"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Yes, there is a one-time joining fee of $49 for all new members. However, we often run promotions where this fee is waived.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>Can I cancel my membership at any time?</h3>
+                        <i class="fas fa-plus"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>All our memberships require a minimum 3-month commitment. After that, you can cancel with 30 days' notice.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>Do you offer family memberships?</h3>
+                        <i class="fas fa-plus"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Yes, we offer family memberships with discounted rates for additional family members. Please contact us for more information.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>Can I freeze my membership?</h3>
+                        <i class="fas fa-plus"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Yes, you can freeze your membership for up to 3 months per year for medical reasons or extended travel.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>Are there any age restrictions?</h3>
+                        <i class="fas fa-plus"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Members must be at least 16 years old. Members aged 16-17 require parental consent and must be accompanied by an adult during their workouts.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="membership-cta">
+        <div class="container">
+            <div class="cta-content">
+                <h2>Ready to Start Your Fitness Journey?</h2>
+                <p>Join GymHub today and take the first step towards a healthier, stronger you.</p>
+                <a href="contact.html" class="btn btn-primary">Join Now</a>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="footer-content">
+            <!-- Logo Section -->
+            <div class="footer-section footer-logo">
+                <a href="index.html">
+                    <img src="logo/logo.jpg" alt="GymHub Logo" style="height: 100px; margin-bottom: 10px;">
+                    <h2>Gym<span>Hub</span></h2>
+                </a>
+                <p>Your ultimate fitness destination for a healthier, stronger you.</p>
+            </div>
+
+            <!-- Quick Links Section -->
+            <div class="footer-section footer-links">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="trainers.html">Trainers</a></li>
+                    <li><a href="membership.html">Membership</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+
+            <!-- Contact Section -->
+            <div class="footer-section footer-contact">
+                <h3>Contact Info</h3>
+                <p><i class="fas fa-map-marker-alt"></i> Mandurriao Rodriguez Avenue, Mandurriao, Iloilo City, 5000 Iloilo, </p>
+                <p><i class="fas fa-phone"></i> 09630389418</p>
+                <p><i class="fas fa-envelope"></i> info@gymhub.com</p>
+            </div>
+
+            <!-- Social Media Section -->
+            <div class="footer-section footer-social">
+                <h3>Follow Us</h3>
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <p>&copy; 2024 GymHub. All rights reserved | Designed with <i class="fas fa-heart"></i></p>
+        </div>
+    </footer>
+
+    <script>
+        // Mobile menu functionality
+        const menuToggle = document.getElementById('menu-toggle');
+        const navLinks = document.querySelector('.nav-links');
+        const menuOverlay = document.getElementById('menu-overlay');
+
+        menuToggle.addEventListener('click', function(e) {
+            e.preventDefault();
+            e.stopPropagation();
+            navLinks.classList.toggle('active');
+            menuOverlay.classList.toggle('active');
+            
+            // Change toggle appearance when menu is open
+            this.classList.toggle('active');
+        });
+
+        menuOverlay.addEventListener('click', function() {
+            navLinks.classList.remove('active');
+            menuOverlay.classList.remove('active');
+            menuToggle.classList.remove('active');
+        });
+        
+        // Close menu when clicking a nav link
+        document.querySelectorAll('.nav-links a').forEach(link => {
+            link.addEventListener('click', function() {
+                navLinks.classList.remove('active');
+                menuOverlay.classList.remove('active');
+                menuToggle.classList.remove('active');
+            });
+        });
+    </script>
+</body>
+</html>

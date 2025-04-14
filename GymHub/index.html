@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GymHub - Your Fitness Destination</title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="footer.css">
+    <link rel="stylesheet" href="auth.css">
+    <link rel="stylesheet" href="nav.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="icon" type="image/jpg" href="logo/logo.jpg">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <a href="index.html">
+                    <img src="logo/logo.jpg" alt="GymHub Logo">
+                </a>
+            </div>
+            <ul class="nav-links">
+                <li><a href="index.html" class="active">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="trainers.html">Trainers</a></li>
+                <li><a href="membership.html">Membership</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+            <div class="nav-buttons">
+                <div class="cta-button">
+                    <a href="#" class="btn" onclick="openLoginModal()">Log in</a>
+                </div>
+                <button class="menu-toggle" id="menu-toggle">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </nav>
+    </header>
+
+    <div class="menu-overlay" id="menu-overlay"></div>
+
+    <main>
+        <section id="home" class="hero">
+            <div class="hero-bg">
+                <img src="index photos/hero-bg.jpg" alt="Gym Background">
+            </div>
+            <div class="hero-content">
+                <h1>Transform Your Body, Transform Your Life</h1>
+                <p>Join GymHub today and start your fitness journey with the best equipment and trainers.</p>
+                <div class="hero-buttons">
+                    <a href="membership.html" class="btn btn-primary">Get Started</a>
+                    <a href="about.html" class="btn btn-secondary">Learn More</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="footer-content">
+            <!-- Logo Section -->
+            <div class="footer-section footer-logo">
+                <a href="index.html">
+                    <img src="logo/logo.jpg" alt="GymHub Logo" style="height: 100px; margin-bottom: 10px;">
+                    <h2>Gym<span>Hub</span></h2>
+                </a>
+                <p>Your ultimate fitness destination for a healthier, stronger you.</p>
+            </div>
+
+            <!-- Quick Links Section -->
+            <div class="footer-section footer-links">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="trainers.html">Trainers</a></li>
+                    <li><a href="membership.html">Membership</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+
+            <!-- Contact Section -->
+            <div class="footer-section footer-contact">
+                <h3>Contact Info</h3>
+                <p><i class="fas fa-map-marker-alt"></i> Mandurriao Rodriguez Avenue, Mandurriao, Iloilo City, 5000 Iloilo, </p>
+                <p><i class="fas fa-phone"></i> 09630389418</p>
+                <p><i class="fas fa-envelope"></i> info@gymhub.com</p>
+            </div>
+
+            <!-- Social Media Section -->
+            <div class="footer-section footer-social">
+                <h3>Follow Us</h3>
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <p>&copy; 2024 GymHub. All rights reserved | Designed with <i class="fas fa-heart"></i></p>
+        </div>
+    </footer>
+
+    <!-- Login Modal -->
+    <div class="auth-overlay" id="auth-overlay" onclick="closeAuthModals()"></div>
+    
+    <div class="auth-modal" id="login-modal">
+        <button class="close-btn" onclick="closeAuthModals()">&times;</button>
+        <div class="auth-modal-header">
+            <div class="modal-avatar">
+                <img src="index photos/avatar.jpg" alt="User Avatar">
+            </div>
+            <h2>Welcome Back</h2>
+            <p>Log in to access your GymHub account</p>
+        </div>
+        <form id="login-form">
+            <div class="auth-form-group">
+                <label for="login-email">Email</label>
+                <input type="email" id="login-email" required>
+            </div>
+            <div class="auth-form-group">
+                <label for="login-password">Password</label>
+                <input type="password" id="login-password" required>
+            </div>
+            <button type="submit" class="btn">Log In</button>
+            <div class="auth-form-footer">
+                <p>Don't have an account? <a onclick="switchToSignup()">Sign Up</a></p>
+                <p><a href="#">Forgot Password?</a></p>
+            </div>
+        </form>
+    </div>
+    
+    <!-- Signup Modal -->
+    <div class="auth-modal" id="signup-modal">
+        <button class="close-btn" onclick="closeAuthModals()">&times;</button>
+        <div class="auth-modal-header">
+            <h2>Create Account</h2>
+            <p>Join GymHub and start your fitness journey</p>
+        </div>
+        <form id="signup-form">
+            <div class="auth-form-group">
+                <label for="signup-name">Full Name</label>
+                <input type="text" id="signup-name" required>
+            </div>
+            <div class="auth-form-group">
+                <label for="signup-email">Email</label>
+                <input type="email" id="signup-email" required>
+            </div>
+            <div class="auth-form-group">
+                <label for="signup-birthday">Birthday</label>
+                <input type="date" id="signup-birthday" required>
+            </div>
+            <div class="auth-form-group">
+                <label for="signup-phone">Phone Number</label>
+                <input type="tel" id="signup-phone" placeholder="e.g., 123-456-7890">
+            </div>
+            <div class="auth-form-group">
+                <label for="signup-gender">Gender</label>
+                <select id="signup-gender">
+                    <option value="">Select gender</option>
+                    <option value="male">Male</option>
+                    <option value="female">Female</option>
+                    <option value="other">Other</option>
+                    <option value="prefer-not">Prefer not to say</option>
+                </select>
+            </div>
+            <div class="auth-form-group">
+                <label for="signup-fitness-goal">Fitness Goal</label>
+                <select id="signup-fitness-goal">
+                    <option value="">Select your primary goal</option>
+                    <option value="weight-loss">Weight Loss</option>
+                    <option value="muscle-gain">Muscle Gain</option>
+                    <option value="endurance">Improve Endurance</option>
+                    <option value="flexibility">Increase Flexibility</option>
+                    <option value="general">General Fitness</option>
+                </select>
+            </div>
+            <div class="auth-form-group">
+                <label for="signup-password">Password</label>
+                <input type="password" id="signup-password" required>
+            </div>
+            <button type="submit" class="btn">Sign Up</button>
+            <div class="auth-form-footer">
+                <p>Already have an account? <a onclick="switchToLogin()">Log In</a></p>
+            </div>
+        </form>
+    </div>
+
+    <!-- Font Awesome for icons -->
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+    <script src="auth.js"></script>
+    <script>
+        // Mobile menu functionality
+        const menuToggle = document.getElementById('menu-toggle');
+        const navLinks = document.querySelector('.nav-links');
+        const menuOverlay = document.getElementById('menu-overlay');
+
+        menuToggle.addEventListener('click', function(e) {
+            e.preventDefault();
+            e.stopPropagation();
+            navLinks.classList.toggle('active');
+            menuOverlay.classList.toggle('active');
+            
+            // Change toggle appearance when menu is open
+            this.classList.toggle('active');
+        });
+
+        menuOverlay.addEventListener('click', function() {
+            navLinks.classList.remove('active');
+            menuOverlay.classList.remove('active');
+            menuToggle.classList.remove('active');
+        });
+        
+        // Close menu when clicking a nav link
+        document.querySelectorAll('.nav-links a').forEach(link => {
+            link.addEventListener('click', function() {
+                navLinks.classList.remove('active');
+                menuOverlay.classList.remove('active');
+                menuToggle.classList.remove('active');
+            });
+        });
+    </script>
+</body>
+</html>

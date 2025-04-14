@@ -1,0 +1,156 @@
+/* Footer Styles */
+.footer {
+    background: #1a1a1a;
+    color: #fff;
+    padding: 60px 20px 0;
+}
+
+.footer-content {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 40px;
+    margin-bottom: 30px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.footer-section {
+    margin-bottom: 20px;
+}
+
+/* Footer Logo Section */
+.footer-logo h2 {
+    font-size: 1.8rem;
+    margin-bottom: 15px;
+}
+
+.footer-logo span {
+    color: var(--primary-color);
+}
+
+.footer-logo p {
+    color: #999;
+    margin-bottom: 20px;
+    font-size: 0.9rem;
+    line-height: 1.5;
+}
+
+/* Footer Links Section */
+.footer-links h3 {
+    font-size: 1.1rem;
+    margin-bottom: 20px;
+    color: #fff;
+    font-weight: 600;
+}
+
+.footer-links ul li {
+    margin-bottom: 10px;
+}
+
+.footer-links ul li a {
+    color: #999;
+    transition: var(--transition);
+    font-size: 0.9rem;
+}
+
+.footer-links ul li a:hover {
+    color: var(--primary-color);
+    padding-left: 5px;
+}
+
+/* Footer Contact Section */
+.footer-contact h3 {
+    font-size: 1.1rem;
+    margin-bottom: 20px;
+    color: #fff;
+    font-weight: 600;
+}
+
+.footer-contact p {
+    color: #999;
+    margin-bottom: 15px;
+    display: flex;
+    align-items: center;
+    font-size: 0.9rem;
+}
+
+.footer-contact p i {
+    margin-right: 10px;
+    color: var(--primary-color);
+}
+
+/* Footer Social Section */
+.footer-social h3 {
+    font-size: 1.1rem;
+    margin-bottom: 20px;
+    color: #fff;
+    font-weight: 600;
+}
+
+.social-links {
+    display: flex;
+    gap: 15px;
+}
+
+.social-links a {
+    width: 32px;
+    height: 32px;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    transition: var(--transition);
+    font-size: 0.9rem;
+}
+
+.social-links a:hover {
+    background: var(--primary-color);
+    transform: translateY(-3px);
+}
+
+/* Footer Bottom */
+.footer-bottom {
+    background: #111;
+    padding: 15px 0;
+    text-align: center;
+}
+
+.footer-bottom p {
+    color: #999;
+    font-size: 0.85rem;
+}
+
+.footer-bottom a {
+    color: var(--primary-color);
+}
+
+.footer-bottom i.fas.fa-heart {
+    color: var(--primary-color);
+    margin: 0 3px;
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+    .footer {
+        padding: 40px 20px 0;
+    }
+    
+    .footer-content {
+        grid-template-columns: 1fr;
+        gap: 30px;
+    }
+    
+    .footer-section {
+        text-align: center;
+    }
+    
+    .footer-contact p {
+        justify-content: center;
+    }
+    
+    .social-links {
+        justify-content: center;
+    }
+}
